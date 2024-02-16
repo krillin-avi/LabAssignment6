@@ -19,7 +19,7 @@ public class GenerateScene : MonoBehaviour
     {
         //InitVariables();
         CreateGround();
-        //CreateForest();
+        CreateForest();
         //CreatePyramid();
     }
 
@@ -31,5 +31,8 @@ public class GenerateScene : MonoBehaviour
 
     }
 
-    //void 
+    void CreateForest()
+    {
+
+    }
 }
