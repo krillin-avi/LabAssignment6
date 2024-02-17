@@ -59,13 +59,13 @@ public class GenerateScene : MonoBehaviour
             randomZScale = UnityEngine.Random.Range(1, 3);
 
             // Random Green
-            randomGreen = UnityEngine.Random.Range(50,200);
+            randomGreen = UnityEngine.Random.Range(50,200) / 255f;
 
             // Setting Properties for Tree at Each Index
             trees[i] = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
             trees[i].transform.position = new Vector3(randomXPos, randomYPos, randomZPos);
             // Need to Randomize the Color Green 
-            trees[i].GetComponent<MeshRenderer>().material.color = Color.green;
+            trees[i].GetComponent<MeshRenderer>().material.color = new Color(0, randomGreen, 0);
             trees[i].transform.localScale = new Vector3(randomXScale, randomYScale, randomZScale);
         }
     }
